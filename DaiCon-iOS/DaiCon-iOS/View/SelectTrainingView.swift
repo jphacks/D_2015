@@ -9,8 +9,9 @@ import SwiftUI
 
 struct SelectTrainingView: View {
     @EnvironmentObject var fireViewModel: FireViewModel
-    @State var Training = 1
-    @State private var trainingCount = "0"
+    @State var Training:String = "腹筋"
+    @State var trainingMenu:String = ""
+    @State private var trainingCount = 1
     @State var Signal:Bool = false
     var tvCommand: TvCommand
     
@@ -24,42 +25,44 @@ struct SelectTrainingView: View {
                 Text(tvCommand.name)
                     .font(.largeTitle)
                     .bold()
-                Button(action: {
-                    fireViewModel.preSet(channel: tvCommand.name, training: currentTraining, count: currentCount)
-                }) {
-                    Text("Done")
-                }.frame(width:100)
             }
 
             Spacer()
-//                Text("Training")
-//                    .frame(width: 300, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
             VStack {
                 Text("Current Status")
                     .font(.headline)
                 Text("Training：　" + currentTraining)
-                Text("Training：　" + String(currentCount))
+                Text("Count：　" + String(currentCount))
 
             }
             HStack{
                 Text("Training")
                     .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
                 Picker(selection: $Training, label:Text("Training：\(Training)")){
-                    Text("腹筋").tag(1)
-                    Text("背筋").tag(2)
-                    Text("スクワット").tag(3)
-                    Text("腕立て").tag(4)
-                    Text("縄跳び").tag(5)
+                    Text("腹筋").tag("腹筋")
+                    Text("背筋").tag("背筋")
+                    Text("スクワット").tag("スクワット")
+                    Text("腕立て").tag("腕立て")
+                    Text("縄跳び").tag("縄跳び")
                 }.frame(width:250, height:250)
+
             }
             HStack{
                 Text("Count")
                     .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
-                TextField("回数を入力してください",text: $trainingCount)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .keyboardType(.numberPad)
-                    .multilineTextAlignment(.center)
-                    .frame(width:250)
+                Button(action: {
+                    if self.trainingCount > 1 {
+                        self.trainingCount -= 1
+                    }
+                }) {
+                    Image(systemName: "minus.circle")
+                }
+                Text(String(trainingCount))
+                Button(action: {
+                    self.trainingCount += 1
+                }) {
+                    Image(systemName: "plus.circle")
+                }
             }
             VStack{
                 if !Signal {
@@ -103,16 +106,22 @@ struct SelectTrainingView: View {
                             .frame(width: 100, height: 22, alignment: .leading)
                     }
                 }
-                
 
             }.frame(height:250)
+            Button(action: {
+                fireViewModel.setSetting(channel: tvCommand.name, training: self.Training, count: trainingCount)
+            }) {
+                Text("Done")
+            }
+            .frame(width:100)
+            .font(.title)
         }
     }
 }
 
-//struct SelectTrainingView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SelectTrainingView(tvCommand: )
-//    }
-//}
+struct SelectTrainingView_Previews: PreviewProvider {
+    static var previews: some View {
+        SelectTrainingView(tvCommand: TvCommand(name: "1ch", setting: ["training": "腕立て","count": 10])).environmentObject(FireViewModel())
+    }
+}
 

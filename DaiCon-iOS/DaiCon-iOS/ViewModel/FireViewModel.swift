@@ -41,9 +41,9 @@ class FireViewModel: ObservableObject {
         }
     }
     
-    func setSetting() {
-        dataStore.collection("TV").document("1ch").setData([
-            "training": "腕立て",
-            "count": 10]) { err in return}
+    func setSetting(channel:String, training:String, count:Int) {
+        dataStore.collection("TV").document(channel).setData([
+            "training": training,
+            "count": count]) { err in return}
     }
 }
