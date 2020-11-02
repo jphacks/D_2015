@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B15731BD254FE6EB00F92065 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15731BC254FE6EB00F92065 /* Helper.swift */; };
 		B1F463B3254FA98C0089EB1D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B1F463B2254FA98C0089EB1D /* SwiftUICharts */; };
 		B1FC7931254E8B4300ABABFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC7930254E8B4300ABABFF /* AppDelegate.swift */; };
 		B1FC7933254E8B4300ABABFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FC7932254E8B4300ABABFF /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		17B728960B9D71CA77C9409C /* Pods-DaiCon-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaiCon-iOS.release.xcconfig"; path = "Target Support Files/Pods-DaiCon-iOS/Pods-DaiCon-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		6C7F432C43BBE353A438D304 /* Pods-DaiCon-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaiCon-iOS.debug.xcconfig"; path = "Target Support Files/Pods-DaiCon-iOS/Pods-DaiCon-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8EEDBB80E0EAFE17F93519CC /* Pods_DaiCon_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaiCon_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B15731BC254FE6EB00F92065 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B1FC792D254E8B4300ABABFF /* DaiCon-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DaiCon-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FC7930254E8B4300ABABFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1FC7932254E8B4300ABABFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				B1FC7981254EEBC500ABABFF /* TvCommand.swift */,
+				B15731BC254FE6EB00F92065 /* Helper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B15731BD254FE6EB00F92065 /* Helper.swift in Sources */,
 				B1FC7974254EAEFD00ABABFF /* HomeView.swift in Sources */,
 				B1FC796B254EA46F00ABABFF /* LoginView.swift in Sources */,
 				B1FC7964254E8EC700ABABFF /* FireViewModel.swift in Sources */,

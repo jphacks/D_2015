@@ -10,34 +10,13 @@ import SwiftUICharts
 import QGrid
 
 struct LogView: View {
-    var chartDataList: [ChartData] = [ChartData(values: [("2018 01/01",10),
-                                                        ("2019 01/01",4),
-                                                        ("2019 01/01",0),
-                                                        ("2019 01/01",8),
-                                                        ("2019 01/01",20),
-                                                        ("2019 01/01",20),
-                                                        ("2019 01/01",20),
-                                                        ("2019 01/01",20)]),
-                                      ChartData(values: [("2018 01/01",10),
-                                                         ("2019 01/01",4),
-                                                         ("2019 01/01",0),
-                                                         ("2019 01/01",8),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20)]),
-                                      ChartData(values: [("2018 01/01",10),
-                                                         ("2019 01/01",4),
-                                                         ("2019 01/01",0),
-                                                         ("2019 01/01",8),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20),
-                                                         ("2019 01/01",20)])]
+    @EnvironmentObject var fireViewModel: FireViewModel
     var body: some View {
         NavigationView {
-            QGrid(chartDataList, columns: 2) {chartData in
-                BarChartView(data: chartData, title: "腹筋", legend: "count",
+            QGrid(trainingList, columns: 2) {training in
+                BarChartView(data: ChartData(values: self.fireViewModel.logList[training.name]! as! Array<(String, Int)>),
+                             title: training.name,
+                             legend: "count",
                              valueSpecifier: "%.f")
                     .padding()
             }
@@ -48,6 +27,6 @@ struct LogView: View {
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {
-        LogView()
+        LogView().environmentObject(FireViewModel())
     }
 }
