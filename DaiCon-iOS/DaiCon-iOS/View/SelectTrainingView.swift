@@ -13,6 +13,7 @@ struct SelectTrainingView: View {
     @State var trainingMenu:String = ""
     @State private var trainingCount = 1
     @State var Signal:Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var tvCommand: TvCommand
     
     
@@ -110,6 +111,8 @@ struct SelectTrainingView: View {
             }.frame(height:250)
             Button(action: {
                 fireViewModel.setSetting(channel: tvCommand.name, training: self.Training, count: trainingCount)
+                self.presentationMode.wrappedValue.dismiss()
+                
             }) {
                 Text("Done")
             }
