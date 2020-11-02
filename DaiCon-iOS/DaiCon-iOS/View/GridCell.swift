@@ -22,7 +22,7 @@ struct GridCell: View {
             }
         }
         .sheet(isPresented: $isPresented) {
-            SelectTrainingView()
+            SelectTrainingView(tvCommand: tvCommand)
         }
     }
 }
