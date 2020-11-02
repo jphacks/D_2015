@@ -11,7 +11,7 @@ struct SelectTrainingView: View {
     @EnvironmentObject var fireViewModel: FireViewModel
     @State var Training:String = "腹筋"
     @State var trainingMenu:String = ""
-    @State private var trainingCount = 0
+    @State private var trainingCount = 1
     @State var Signal:Bool = false
     var tvCommand: TvCommand
     
@@ -51,7 +51,9 @@ struct SelectTrainingView: View {
                 Text("Count")
                     .frame(width: 100, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
                 Button(action: {
-                    self.trainingCount -= 1
+                    if self.trainingCount > 1 {
+                        self.trainingCount -= 1
+                    }
                 }) {
                     Image(systemName: "minus.circle")
                 }
