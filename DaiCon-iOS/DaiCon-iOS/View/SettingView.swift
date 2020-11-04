@@ -17,7 +17,7 @@ struct SettingView: View {
                 GridCell(tvCommand: tvCommand)
             }
                 .navigationTitle("Setting")
-        }
+        }   
     }
 }
 
