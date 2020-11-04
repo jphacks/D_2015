@@ -11,6 +11,7 @@ struct GridCell: View {
     @State var isPresented: Bool = false
     var tvCommand: TvCommand
     var body: some View {
+
         Button(action: {self.isPresented.toggle()}) {
             VStack {
                 Image(tvCommand.name)
@@ -22,7 +23,7 @@ struct GridCell: View {
             }
         }
         .sheet(isPresented: $isPresented) {
-            SelectTrainingView(tvCommand: tvCommand)
+            SelectTrainingView(Training: tvCommand.setting["training"] as! String, trainingCount: tvCommand.setting["count"] as! Int, tvCommand: tvCommand)
         }
     }
 }

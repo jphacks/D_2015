@@ -13,12 +13,16 @@ struct LoginView: View {
     @State var inputPassword: String = ""
     var body: some View {
         VStack {
-            Image("DaiCon_illust")
-                .resizable()
-                .frame(width: 80, height: 80, alignment: .center)
             Spacer()
-            Text("DaiCon")
-                .font(.system(size: 48, weight: .heavy))
+            HStack {
+                Text("DaiCon")
+                    .font(.system(size: 48, weight: .heavy))
+                    .offset(x:25)
+                Image("DaiCon_illust")
+                    .resizable()
+                    .frame(width: 50, height: 50, alignment: .center)
+                    .offset(x:25)
+            }
             VStack(spacing: 24) {
                 TextField("Mail address", text: $inputEmail)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
