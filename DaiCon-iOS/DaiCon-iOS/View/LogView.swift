@@ -21,6 +21,7 @@ struct LogView: View {
                     .padding()
             }
                 .navigationTitle("Life Log")
+                    .font(.title)
         }
     }
 }

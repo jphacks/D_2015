@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct SelectTrainingView: View {
+    @State var isPresented: Bool = false
     @EnvironmentObject var fireViewModel: FireViewModel
     @State var Training:String
     @State var trainingMenu:String = ""
@@ -108,6 +110,12 @@ struct SelectTrainingView: View {
 
                         Button(action: {
                             Signal.toggle()
+                            let url = "http://163.221.129.99:5000/register"
+                            let parameters:[String : Any] = ["detail" : tvCommand.name]
+                            
+                            AF.request(url, method: .post, parameters: parameters).responseJSON {response in
+                                print(response)
+                            }
                         }) {
                             Text("apply")
                                 .fontWeight(.medium)
@@ -140,9 +148,9 @@ struct SelectTrainingView: View {
 
             }.frame(height:200)
             Button(action: {
+
                 fireViewModel.setSetting(channel: tvCommand.name, training: self.Training, count: trainingCount)
                 self.presentationMode.wrappedValue.dismiss()
-                
             }) {
                 Text("Done")
             }
