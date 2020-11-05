@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）
+# DaiCon
 
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2020/09/JPHACKS2020_ogp.jpg)](https://www.youtube.com/watch?v=G5rULR53uMk)
 
@@ -18,17 +18,27 @@
 
 ## 開発技術
 ### 活用した技術
-#### API・データ
-* 
-* 
 
 #### フレームワーク・ライブラリ・モジュール
-* 
-* 
+* Swift
+    * SwiftUI
+    * CoreML
+    * [Alamofire](https://github.com/Alamofire/Alamofire)
+    * [QGrid](https://github.com/Q-Mobile/QGrid)
+    * [ChartView](https://github.com/AppPear/ChartView)
+* Python
+    * Flask
+    * BeautifulSoup4
 
 #### デバイス
-* 
-* 
+* iPhone
+* Apple Watch
+* Raspberry Pi
+    * 赤外線送受信モジュール
+
+#### その他
+* Firebase
+    * Cloud Firestore
 
 ### 独自技術
 #### ハッカソンで開発した独自機能・技術
