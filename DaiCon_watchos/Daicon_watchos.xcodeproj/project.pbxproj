@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A1DE55AC9530881529034DA /* Pods_Daicon_watchos_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CEA31D526AB4EB21004D4C2 /* Pods_Daicon_watchos_WatchKit_Extension.framework */; };
+		408929F6555849440B5D6206 /* Pods_Daicon_watchos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEE989746D80D4F9F52BB47 /* Pods_Daicon_watchos.framework */; };
+		4AD1E15D8976CB41E5896C63 /* Pods_Daicon_watchos_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AABB41F0EE841EAED477E4 /* Pods_Daicon_watchos_WatchKit_App.framework */; };
+		E7B4872125521EFC00FAFADB /* Daicon_watchos WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E7B4872025521EFC00FAFADB /* Daicon_watchos WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7B4872625521EFE00FAFADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4872525521EFE00FAFADB /* Assets.xcassets */; };
+		E7B4872D25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E7B4872C25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E7B4873225521EFE00FAFADB /* Daicon_watchosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4873125521EFE00FAFADB /* Daicon_watchosApp.swift */; };
+		E7B4873425521EFE00FAFADB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4873325521EFE00FAFADB /* ContentView.swift */; };
+		E7B4873625521EFE00FAFADB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4873525521EFE00FAFADB /* NotificationController.swift */; };
+		E7B4873825521EFE00FAFADB /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4873725521EFE00FAFADB /* NotificationView.swift */; };
+		E7B4873A25521EFE00FAFADB /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4873925521EFE00FAFADB /* ComplicationController.swift */; };
+		E7B4873C25521EFF00FAFADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4873B25521EFF00FAFADB /* Assets.xcassets */; };
+		E7B4873F25521EFF00FAFADB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7B4873E25521EFF00FAFADB /* Preview Assets.xcassets */; };
+		E7B4875325521F9000FAFADB /* DeepViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4875225521F9000FAFADB /* DeepViewModel.swift */; };
+		E7B487582552220600FAFADB /* jphackclassifer 7.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E7B487572552220600FAFADB /* jphackclassifer 7.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7B4872225521EFC00FAFADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7B4871625521EFC00FAFADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7B4871F25521EFC00FAFADB;
+			remoteInfo = "Daicon_watchos WatchKit App";
+		};
+		E7B4872E25521EFE00FAFADB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7B4871625521EFC00FAFADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7B4872B25521EFE00FAFADB;
+			remoteInfo = "Daicon_watchos WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7B4874725521EFF00FAFADB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E7B4872D25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B4874B25521EFF00FAFADB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E7B4872125521EFC00FAFADB /* Daicon_watchos WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B48781255237E800FAFADB /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2FEE989746D80D4F9F52BB47 /* Pods_Daicon_watchos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daicon_watchos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		438BECC585B8608C7D8A719E /* Pods-Daicon_watchos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos.debug.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos/Pods-Daicon_watchos.debug.xcconfig"; sourceTree = "<group>"; };
+		44E35830D4942AE96A718F7F /* Pods-Daicon_watchos WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos WatchKit App/Pods-Daicon_watchos WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		4732069E75AC01AD616A17F2 /* Pods-Daicon_watchos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos.release.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos/Pods-Daicon_watchos.release.xcconfig"; sourceTree = "<group>"; };
+		79AABB41F0EE841EAED477E4 /* Pods_Daicon_watchos_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daicon_watchos_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		812AC25B41F6A4B000EF5970 /* Pods-Daicon_watchos WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos WatchKit Extension/Pods-Daicon_watchos WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9CEA31D526AB4EB21004D4C2 /* Pods_Daicon_watchos_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daicon_watchos_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4378D2D5F5DFF675F3AF8F4 /* Pods-Daicon_watchos WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos WatchKit App/Pods-Daicon_watchos WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		C07EC05FB103AA3160838732 /* Pods-Daicon_watchos WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daicon_watchos WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Daicon_watchos WatchKit Extension/Pods-Daicon_watchos WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		E7B4871C25521EFC00FAFADB /* Daicon_watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daicon_watchos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B4872025521EFC00FAFADB /* Daicon_watchos WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daicon_watchos WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B4872525521EFE00FAFADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7B4872725521EFE00FAFADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B4872C25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Daicon_watchos WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7B4873125521EFE00FAFADB /* Daicon_watchosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daicon_watchosApp.swift; sourceTree = "<group>"; };
+		E7B4873325521EFE00FAFADB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7B4873525521EFE00FAFADB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E7B4873725521EFE00FAFADB /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E7B4873925521EFE00FAFADB /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E7B4873B25521EFF00FAFADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7B4873E25521EFF00FAFADB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7B4874025521EFF00FAFADB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B4874125521EFF00FAFADB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E7B4875225521F9000FAFADB /* DeepViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepViewModel.swift; sourceTree = "<group>"; };
+		E7B487572552220600FAFADB /* jphackclassifer 7.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "jphackclassifer 7.mlmodel"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40A46D6644BB90E9577C026A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AD1E15D8976CB41E5896C63 /* Pods_Daicon_watchos_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2CD0845C3899BE662151367 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408929F6555849440B5D6206 /* Pods_Daicon_watchos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B4872925521EFE00FAFADB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A1DE55AC9530881529034DA /* Pods_Daicon_watchos_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CAD53D7AB4C94081CD3100D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FEE989746D80D4F9F52BB47 /* Pods_Daicon_watchos.framework */,
+				79AABB41F0EE841EAED477E4 /* Pods_Daicon_watchos_WatchKit_App.framework */,
+				9CEA31D526AB4EB21004D4C2 /* Pods_Daicon_watchos_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D5B0E58C8BFAF1BC501FA57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				438BECC585B8608C7D8A719E /* Pods-Daicon_watchos.debug.xcconfig */,
+				4732069E75AC01AD616A17F2 /* Pods-Daicon_watchos.release.xcconfig */,
+				A4378D2D5F5DFF675F3AF8F4 /* Pods-Daicon_watchos WatchKit App.debug.xcconfig */,
+				44E35830D4942AE96A718F7F /* Pods-Daicon_watchos WatchKit App.release.xcconfig */,
+				C07EC05FB103AA3160838732 /* Pods-Daicon_watchos WatchKit Extension.debug.xcconfig */,
+				812AC25B41F6A4B000EF5970 /* Pods-Daicon_watchos WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7B4871525521EFC00FAFADB = {
+			isa = PBXGroup;
+			children = (
+				E7B4872425521EFC00FAFADB /* Daicon_watchos WatchKit App */,
+				E7B4873025521EFE00FAFADB /* Daicon_watchos WatchKit Extension */,
+				E7B4871D25521EFC00FAFADB /* Products */,
+				6D5B0E58C8BFAF1BC501FA57 /* Pods */,
+				5CAD53D7AB4C94081CD3100D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E7B4871D25521EFC00FAFADB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4871C25521EFC00FAFADB /* Daicon_watchos.app */,
+				E7B4872025521EFC00FAFADB /* Daicon_watchos WatchKit App.app */,
+				E7B4872C25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7B4872425521EFC00FAFADB /* Daicon_watchos WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4872525521EFE00FAFADB /* Assets.xcassets */,
+				E7B4872725521EFE00FAFADB /* Info.plist */,
+			);
+			path = "Daicon_watchos WatchKit App";
+			sourceTree = "<group>";
+		};
+		E7B4873025521EFE00FAFADB /* Daicon_watchos WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4873125521EFE00FAFADB /* Daicon_watchosApp.swift */,
+				E7B4873325521EFE00FAFADB /* ContentView.swift */,
+				E7B4873525521EFE00FAFADB /* NotificationController.swift */,
+				E7B4873725521EFE00FAFADB /* NotificationView.swift */,
+				E7B4873925521EFE00FAFADB /* ComplicationController.swift */,
+				E7B4873B25521EFF00FAFADB /* Assets.xcassets */,
+				E7B4874025521EFF00FAFADB /* Info.plist */,
+				E7B4874125521EFF00FAFADB /* PushNotificationPayload.apns */,
+				E7B487572552220600FAFADB /* jphackclassifer 7.mlmodel */,
+				E7B4873D25521EFF00FAFADB /* Preview Content */,
+				E7B4875225521F9000FAFADB /* DeepViewModel.swift */,
+			);
+			path = "Daicon_watchos WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E7B4873D25521EFF00FAFADB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E7B4873E25521EFF00FAFADB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7B4871B25521EFC00FAFADB /* Daicon_watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B4874C25521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos" */;
+			buildPhases = (
+				B9B6FEE6CD82CDC8B74F7D1C /* [CP] Check Pods Manifest.lock */,
+				E7B4871A25521EFC00FAFADB /* Resources */,
+				E7B4874B25521EFF00FAFADB /* Embed Watch Content */,
+				B2CD0845C3899BE662151367 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7B4872325521EFC00FAFADB /* PBXTargetDependency */,
+			);
+			name = Daicon_watchos;
+			productName = Daicon_watchos;
+			productReference = E7B4871C25521EFC00FAFADB /* Daicon_watchos.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E7B4871F25521EFC00FAFADB /* Daicon_watchos WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B4874825521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos WatchKit App" */;
+			buildPhases = (
+				0F90620DFD7E38F909437C70 /* [CP] Check Pods Manifest.lock */,
+				E7B4871E25521EFC00FAFADB /* Resources */,
+				E7B4874725521EFF00FAFADB /* Embed App Extensions */,
+				40A46D6644BB90E9577C026A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7B4872F25521EFE00FAFADB /* PBXTargetDependency */,
+			);
+			name = "Daicon_watchos WatchKit App";
+			productName = "Daicon_watchos WatchKit App";
+			productReference = E7B4872025521EFC00FAFADB /* Daicon_watchos WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E7B4872B25521EFE00FAFADB /* Daicon_watchos WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7B4874425521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos WatchKit Extension" */;
+			buildPhases = (
+				5767B9B7D8B6379E4EAFDAC7 /* [CP] Check Pods Manifest.lock */,
+				E7B4872825521EFE00FAFADB /* Sources */,
+				E7B4872925521EFE00FAFADB /* Frameworks */,
+				E7B4872A25521EFE00FAFADB /* Resources */,
+				E7B48781255237E800FAFADB /* Copy Frameworks */,
+				DA92F1B8A3E9109629846262 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Daicon_watchos WatchKit Extension";
+			productName = "Daicon_watchos WatchKit Extension";
+			productReference = E7B4872C25521EFE00FAFADB /* Daicon_watchos WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7B4871625521EFC00FAFADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E7B4871B25521EFC00FAFADB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E7B4871F25521EFC00FAFADB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E7B4872B25521EFE00FAFADB = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = E7B4871925521EFC00FAFADB /* Build configuration list for PBXProject "Daicon_watchos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7B4871525521EFC00FAFADB;
+			productRefGroup = E7B4871D25521EFC00FAFADB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7B4871B25521EFC00FAFADB /* Daicon_watchos */,
+				E7B4871F25521EFC00FAFADB /* Daicon_watchos WatchKit App */,
+				E7B4872B25521EFE00FAFADB /* Daicon_watchos WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7B4871A25521EFC00FAFADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B4871E25521EFC00FAFADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B4872625521EFE00FAFADB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7B4872A25521EFE00FAFADB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B4873F25521EFF00FAFADB /* Preview Assets.xcassets in Resources */,
+				E7B4873C25521EFF00FAFADB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F90620DFD7E38F909437C70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daicon_watchos WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5767B9B7D8B6379E4EAFDAC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daicon_watchos WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9B6FEE6CD82CDC8B74F7D1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Daicon_watchos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA92F1B8A3E9109629846262 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daicon_watchos WatchKit Extension/Pods-Daicon_watchos WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Daicon_watchos WatchKit Extension/Pods-Daicon_watchos WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Daicon_watchos WatchKit Extension/Pods-Daicon_watchos WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7B4872825521EFE00FAFADB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B487582552220600FAFADB /* jphackclassifer 7.mlmodel in Sources */,
+				E7B4875325521F9000FAFADB /* DeepViewModel.swift in Sources */,
+				E7B4873625521EFE00FAFADB /* NotificationController.swift in Sources */,
+				E7B4873425521EFE00FAFADB /* ContentView.swift in Sources */,
+				E7B4873A25521EFE00FAFADB /* ComplicationController.swift in Sources */,
+				E7B4873225521EFE00FAFADB /* Daicon_watchosApp.swift in Sources */,
+				E7B4873825521EFE00FAFADB /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7B4872325521EFC00FAFADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7B4871F25521EFC00FAFADB /* Daicon_watchos WatchKit App */;
+			targetProxy = E7B4872225521EFC00FAFADB /* PBXContainerItemProxy */;
+		};
+		E7B4872F25521EFE00FAFADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7B4872B25521EFE00FAFADB /* Daicon_watchos WatchKit Extension */;
+			targetProxy = E7B4872E25521EFE00FAFADB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E7B4874225521EFF00FAFADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7B4874325521EFF00FAFADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7B4874525521EFF00FAFADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C07EC05FB103AA3160838732 /* Pods-Daicon_watchos WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Daicon_watchos WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Daicon_watchos WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		E7B4874625521EFF00FAFADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 812AC25B41F6A4B000EF5970 /* Pods-Daicon_watchos WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Daicon_watchos WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Daicon_watchos WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		E7B4874925521EFF00FAFADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4378D2D5F5DFF675F3AF8F4 /* Pods-Daicon_watchos WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				IBSC_MODULE = Daicon_watchos_WatchKit_Extension;
+				INFOPLIST_FILE = "Daicon_watchos WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		E7B4874A25521EFF00FAFADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44E35830D4942AE96A718F7F /* Pods-Daicon_watchos WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				IBSC_MODULE = Daicon_watchos_WatchKit_Extension;
+				INFOPLIST_FILE = "Daicon_watchos WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		E7B4874D25521EFF00FAFADB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438BECC585B8608C7D8A719E /* Pods-Daicon_watchos.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E7B4874E25521EFF00FAFADB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4732069E75AC01AD616A17F2 /* Pods-Daicon_watchos.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZY6FK4H66Q;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.naist.is-ti0.koki.tachibana.Daicon-watchos";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7B4871925521EFC00FAFADB /* Build configuration list for PBXProject "Daicon_watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B4874225521EFF00FAFADB /* Debug */,
+				E7B4874325521EFF00FAFADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B4874425521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B4874525521EFF00FAFADB /* Debug */,
+				E7B4874625521EFF00FAFADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B4874825521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B4874925521EFF00FAFADB /* Debug */,
+				E7B4874A25521EFF00FAFADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7B4874C25521EFF00FAFADB /* Build configuration list for PBXNativeTarget "Daicon_watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7B4874D25521EFF00FAFADB /* Debug */,
+				E7B4874E25521EFF00FAFADB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7B4871625521EFC00FAFADB /* Project object */;
+}
