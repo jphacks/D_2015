@@ -50,6 +50,10 @@ struct FavoriteView: View {
     @State private var name3 = ""
     @State var programList = [Program]()
     
+    func delete() {
+        programList.removeAll()
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -66,21 +70,23 @@ struct FavoriteView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())  // 入力域のまわりを枠で囲む
                     .padding(5)  // 余白を追加
                 Button(action: {
+                    delete()
                     fireViewModel.setFavorite(name1:name1, name2:name2, name3:name3)
 
                     let url = "http://172.20.10.14:5000/program"
                     let parameters:[String:String] = ["tv1": name1, "tv2": name2, "tv3": name3]
-                    
+
                     AF.request(url, method: .post, parameters: parameters).responseJSON {response in
                         let decoder = JSONDecoder()
                         let product = try! decoder.decode(responseTV.self, from: response.data!)
-                        
+
                         let programCount = product.time.count
-                        
+                        print(programList)
+
                         for i in 0..<programCount {
                             self.programList.append(Program(proTime:product.time[i], proStation: product.station[i], proTitle:product.title[i], proDetail:product.detail[i]))
                         }
-                        
+
                     }
                 }) {
                     Text("Send")
@@ -91,32 +97,29 @@ struct FavoriteView: View {
                         .padding(2)
                         .font(.body)
                 }
-                Divider()
-                ScrollView(.vertical) {
-                    ForEach(self.programList) { program in
+                List {
+                    ForEach(self.programList){ program in
                         VStack{
                             Text(program.proTitle)
                                 .padding(10)
                                 .font(.headline)
-                                .frame(width:UIScreen.main.bounds.size.width)
                                 .background(Color.green)
                                 .foregroundColor(Color.white)
+                                .frame(alignment: .center)
                             Text(program.proStation)
                                 .font(.callout)
                                 .padding(5)
-                                .padding(.top, 10)
                             Text(program.proTime)
                                 .font(.callout)
                                 .padding(5)
                             Text(program.proDetail)
                                 .font(.footnote)
                                 .padding(5)
-                                .padding(.horizontal, 15)
                                 .padding(.bottom, 20)
                         }
-                        Spacer()
                     }
                 }
+                .frame(width:UIScreen.main.bounds.size.width, alignment: .center)
                 Spacer()
             }
             .navigationTitle("Favorite")
