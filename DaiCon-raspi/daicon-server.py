@@ -11,7 +11,7 @@ from firebase_admin import credentials
 from firebase_admin import firestore
 
 trainingList = ["縄跳び", "背筋", "腹筋", "腕立て", "スクワット"]
-cred = credentials.Certificate(os.path.join("secret_key","daicon-credentials.json"))
+cred = credentials.Certificate(os.path.join("irmcli","secret_key","daicon-credentials.json"))
 firebase_admin.initialize_app(cred)
 app = Flask(__name__)
 
@@ -87,7 +87,9 @@ def controller():
             log_ref = db.collection('log').get()
             log_json = {}
             
-            if date2str in log_ref.keys():
+            #if date2str in log_ref.keys():
+            try:
+                print("aaa")
                 for doc in log_ref:
                     log_json[str(doc.id)] = doc.to_dict()
                     
@@ -97,7 +99,11 @@ def controller():
                 target_ref = db.collection('log').document(date2str)
                 target_ref.set(log_json[date2str])
             
-            else:
+            
+            
+            #else:
+            except:
+                print("bbb")
                 initial_log = {
                             trainingList[0]: 0,
                             trainingList[1]: 0,
@@ -106,10 +112,12 @@ def controller():
                             trainingList[4]: 0,
                             'date': int(date2str)
                         }
-                initial_log[training] += count
+                initial_log[training] += int(count)
+                print(initial_log)
                 
                 target_ref = db.collection('log').document(date2str)
                 target_ref.set(initial_log)
+                
             
             
             result = {"result":"Success"}
@@ -227,8 +235,8 @@ def register():
 @app.route("/program",methods=["GET","POST"])
 def program_func():
     if request.method == "POST":
-        return program.get_program(request.form["tv1"])
-        
+        return program.get_program([request.form["tv1"],request.form["tv2"],request.form["tv3"]])
+
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0")
