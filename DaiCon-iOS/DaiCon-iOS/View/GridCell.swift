@@ -12,14 +12,15 @@ struct GridCell: View {
     var tvCommand: TvCommand
     var body: some View {
 
-        Button(action: {self.isPresented.toggle()}) {
+        Button(action: {
+                self.isPresented.toggle()
+            print(tvCommand)
+        }) {
             VStack {
                 Image(tvCommand.name)
                     .resizable()
                     .renderingMode(.original)
                     .frame(width: 100, height: 100)
-                Text(tvCommand.name)
-                    .foregroundColor(.black)
             }
         }
         .sheet(isPresented: $isPresented) {
